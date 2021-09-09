@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Form Validation</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">name</label>
+          <input type="text" placeholder="name" id="username" maxlength="20" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            placeholder="9999999999"
+            id="phone"
+            minlength="10"
+            maxlength="10"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="abc@gmail.com" id="email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="bio">Bio</label>
+          <textarea name="bio" id="bio" cols="20" rows="5"></textarea>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label>Gender :</label><br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
